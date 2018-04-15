@@ -1,0 +1,71 @@
+@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+
+/* Global UI font */
+* {
+    font-size: 9pt !important;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
+    /* letter-spacing: 1px !important; */
+    /* font-weight: 300 !important; */
+    text-shadow: none !important;
+    /* color: black !important; */
+}
+
+
+#personal-bookmarks .bookmark-item > .toolbarbutton-text {
+    font-size:9pt !important;
+    /* font-weight:bold; */
+    word-spacing: 10px !important;
+    text-shadow: none !important;
+    color: black !important;
+}
+
+#main-window #urlbar
+{
+  background: white !important;
+  color: black !important;
+}
+
+#main-window{
+    background-color: #DBDBDB !important;
+    color: black !important;
+}
+
+.tab-background[selected="true"] {
+background-color: #EEEEEE !important; /* this sets the color of the tab background */
+opacity: 1;
+}
+.tab-line[selected="true"] {
+background-color : #EEEEEE !important; /* this sets the color of the line above the tab */
+color: black !important;
+}
+
+.tab-background:not([selected]) {
+    background-color: #C1C1C1 !important;
+    opacity: 1;
+    color: black !important;
+    font-weight: 300 !important;
+}
+
+
+#navigator-toolbox > toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#PersonalToolbar), .browserContainer > findbar, #browser-bottombox {
+    /* background-color: #EEEEEE !important; */
+    background: linear-gradient(to top, #d1d1d1 0%,#eeeeee 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+#PersonalToolbar{
+    background: #d1d1d1 !important;
+    border-bottom: solid 1px #c1c1c1!important;
+    padding-bottom: 5px !important;
+}
+
+#TabsToolbar{
+background: linear-gradient(to bottom, #4c4c4c 0%,#2c2c2c 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    z-index: 1000;
+    color: black !important;
+}
+
+:root:not([customizing]):not([tabsintitlebar]):not([inFullscreen]) #TabsToolbar:not(:-moz-lwtheme), :root:-moz-any([inFullscreen], [tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme) {
+    -moz-appearance: none!important;
+}
