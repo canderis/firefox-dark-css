@@ -1,5 +1,6 @@
 # Dark Firefox
 ![example image](example.png)
+
 **A Firefox Theme**
 
 I recently made the switch from Chrome to Firefox but I wasn't satisfied with the browser.
